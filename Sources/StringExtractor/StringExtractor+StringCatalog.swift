@@ -15,7 +15,6 @@ extension StringExtractor {
 
                 // Only process manual strings
                 guard value.extractionState == .manual else {
-                    issues.append(ExtractionIssue(key: key, reason: .wrongExtractionState(value.extractionState)))
                     continue
                 }
 
